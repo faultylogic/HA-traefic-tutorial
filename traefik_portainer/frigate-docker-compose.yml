@@ -29,7 +29,7 @@ services:
       - traefik.enable=true
       - traefik.docker.network=proxy
       - traefik.http.routers.frigate-secure.entrypoints=websecure
-      - traefik.http.routers.frigate-secure.rule=Host(`frigate.faultylogic.duckdns.org`)
+      - traefik.http.routers.frigate-secure.rule=Host(`frigate.[yourDomain]`)
       - traefik.http.routers.frigate-secure.service=frigate
       - traefik.http.services.frigate.loadbalancer.server.port=5000
       
